@@ -1,2 +1,6 @@
 #!/bin/bash
-find . -type d -exec chmod a+x {} \;
+shopt -s nullglob
+for dir in */
+do
+    chmod a+x "$dir"
+done
