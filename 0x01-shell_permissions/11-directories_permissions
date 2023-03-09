@@ -1,6 +1,2 @@
 #!/bin/bash
-shopt -s nullglob
-for dir in */
-do
-    chmod a+x "$dir"
-done
+for dir in */ do chmod +x "$dir" done
