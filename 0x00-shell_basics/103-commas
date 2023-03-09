@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1pA | sed -e 's/\([^0-9a-zA-Z]\)$/\1\//' | sort -df

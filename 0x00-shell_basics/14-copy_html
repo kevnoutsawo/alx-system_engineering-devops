@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ..
+find "$(pwd)/$(basename "$PWD")" -name "*.html" -type f -cnewer "../$(basename "$PWD")/%f" -exec cp -n {} "../$(basename "$PWD")/" \;
