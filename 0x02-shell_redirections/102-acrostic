@@ -1,0 +1,10 @@
+#!/bin/bash
+
+input_file=$1
+output=""
+
+while IFS= read -r line; do
+    output+="${line:0:1}"
+done < "$input_file"
+
+echo "$output"
